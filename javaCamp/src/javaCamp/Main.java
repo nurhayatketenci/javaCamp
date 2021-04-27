@@ -21,6 +21,7 @@ public class Main {
 		courseManager.GetAll(courses);
 		courseManager.Add(course2);
 		courseManager.Delete(course2);
+		System.out.print(false);
 
 
 	}
