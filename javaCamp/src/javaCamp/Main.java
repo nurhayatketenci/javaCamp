@@ -16,12 +16,33 @@ public class Main {
 		course2.courseName="C#+ANGULAR";
 		course2.instructorName="ENGÝN DEMÝROÐ";
 		course2.courseDetail="2 AYDA C#";
+		
 		Course[] courses= {course1,course2};
 		CourseManager courseManager=new CourseManager();
-		courseManager.GetAll(courses);
 		courseManager.Add(course2);
-		courseManager.Delete(course2);
-		System.out.print(false);
+		courseManager.GetAll(courses);
+		System.out.println("------------------------------------------------------------");
+		
+		Instructor instructor1=new Instructor();
+		instructor1.instructorId=1;
+		instructor1.firstName="ENGÝN";
+		instructor1.lastName="DEMÝROÐ";
+		Instructor[] instructors= {instructor1};
+		System.out.println("EÐÝTMEN:"+instructor1.firstName+" "+instructor1.lastName);
+		
+		Student student1=new Student();
+		student1.studentId=1;
+		student1.studentFirstName="NURHAYAT";
+		student1.studentLastName="KETENCÝ";
+		student1.studentDetail="junior developer";
+		Student[] Students= {student1};
+		
+		System.out.println("ÖÐRENCÝ:"+student1.studentFirstName+" "+student1.studentLastName);
+		
+	   
+		
+		
+
 
 
 	}
